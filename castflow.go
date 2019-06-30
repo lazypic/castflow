@@ -43,7 +43,6 @@ var (
 func main() {
 	log.SetPrefix("castflow: ")
 	log.SetFlags(0)
-	flag.Usage = usage
 	flag.Parse()
 
 	sess := session.Must(session.NewSessionWithOptions(session.Options{
@@ -89,11 +88,13 @@ func main() {
 			fmt.Fprintf(os.Stderr, "%v\n", err)
 			os.Exit(1)
 		}
-	} else {
+	} else if *flagSearchword != "" {
 		err := GetCharacters(*db, *flagSearchword)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "%v\n", err)
 			os.Exit(1)
 		}
+	} else {
+		flag.PrintDefaults()
 	}
 }
