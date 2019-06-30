@@ -1,7 +1,7 @@
 # castflow
 
 castflow는 Lazypic 에서
-캐릭터 Intellectual property rights (IPR) 을 관리하는 소프트웨어다.
+캐릭터 Intellectual property rights (IPR) 을 관리하는 소프트웨어이다.
 
 ### 사용법
 캐릭터 등록
