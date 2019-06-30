@@ -22,9 +22,9 @@ var (
 	flagTable   = flag.String("table", "castflow", "AWS Dynamodb table name")
 
 	// mode and partition key
-	flagAdd = flag.Bool("add", false, "user addition mode")
-	flagSet = flag.Bool("set", false, "user update mode")
-	flagRm  = flag.Bool("rm", false, "user remove mode")
+	flagAdd = flag.Bool("add", false, "character addition mode")
+	flagSet = flag.Bool("set", false, "character update mode")
+	flagRm  = flag.Bool("rm", false, "character remove mode")
 
 	// date
 	flagHelp = flag.Bool("help", false, "print help")
