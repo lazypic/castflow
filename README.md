@@ -64,7 +64,6 @@ AWS DB접근 권한을 설정할 계정에 아래 권한을 부여합니다.
                 "dynamodb:Scan",
                 "dynamodb:BatchWrite*",
                 "dynamodb:CreateTable",
-                "dynamodb:Delete*",
                 "dynamodb:Update*",
                 "dynamodb:PutItem"
             ],
