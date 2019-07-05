@@ -7,7 +7,7 @@ castflow는 Lazypic 에서
 캐릭터 등록
 
 ```bash
-$ castflow -id chocoala -email chocoala@lazypic.org -regnum C-2018-019061 -manager [담당자] -foa [활동범위] -concept [콘셉]
+$ castflow -add -id chocoala -email chocoala@lazypic.org -regnum C-2018-019061 -manager [담당자] -foa [활동범위] -concept [콘셉]
 ```
 
 캐릭터 수정
