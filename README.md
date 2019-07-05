@@ -15,13 +15,6 @@ $ castflow -add -id chocoala -email chocoala@lazypic.org -regnum C-2018-019061 -
 $ castflow -set -id [id] -concept [수정내용]
 ```
 
-
-캐릭터 삭제
-
-```bash
-$ sudo castflow -rm -id [id]
-```
-
 캐릭터 검색
 
 ```bash

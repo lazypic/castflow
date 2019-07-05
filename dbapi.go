@@ -184,23 +184,6 @@ func SetCharacter(db dynamodb.DynamoDB) error {
 	return nil
 }
 
-// RmCharacter 는 프로젝트 자료구조를 사용자를 삭제하는 함수이다.
-func RmCharacter(db dynamodb.DynamoDB) error {
-	input := &dynamodb.DeleteItemInput{
-		TableName: aws.String(*flagTable),
-		Key: map[string]*dynamodb.AttributeValue{
-			partitionKey: {
-				S: aws.String(*flagID),
-			},
-		},
-	}
-	_, err := db.DeleteItem(input)
-	if err != nil {
-		return err
-	}
-	return nil
-}
-
 // GetCharacters 는 사용자를 가지고오는 함수이다.
 func GetCharacters(db dynamodb.DynamoDB, word string) error {
 	proj := expression.NamesList(
